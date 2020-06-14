@@ -157,10 +157,11 @@
                 style="@style/NumberButtonStyle"
                 android:text="0" />
 
-            <TextView
-                android:id="@+id/textViewBack"
+            <ImageView
+                android:id="@+id/buttonBack"
                 style="@style/NumberButtonStyle"
-                android:text="<-" />
+                android:scaleType="center"
+                android:src="@drawable/ic_backspace_white_24dp" />
 
             <TextView
                 android:id="@+id/textViewEquals"
