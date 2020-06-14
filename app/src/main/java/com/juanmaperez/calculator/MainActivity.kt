@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun appendOnExpression(string: String, canClear: Boolean) {
+    fun appendOnExpression(expression: String, canClear: Boolean) {
 
         if(textViewResult.text.isNotEmpty()){
             textViewExpression.text = ""
@@ -71,10 +71,10 @@ class MainActivity : AppCompatActivity() {
 
         if (canClear) {
             textViewResult.text = ""
-            textViewExpression.append(string)
+            textViewExpression.append(expression)
         } else {
             textViewExpression.append(textViewResult.text)
-            textViewExpression.append(string)
+            textViewExpression.append(expression)
             textViewResult.text = ""
         }
     }
